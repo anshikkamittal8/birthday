@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy 22nd Birthday</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('wallpaper.jpg') repeat;
+            background-size: 300px;
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+        }
+
+        header {
+          min-height: 100vh;
+          background: url('wallpaper.jpg');
+          background-size: 200px;
+          background-repeat: repeat;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          padding: 40px;
+          border-bottom: 6px dashed #e89ab5;
+}
+
+        header h1 {
+            font-family: 'Permanent Marker', cursive;
+            font-size: 3rem;
+        }
+
+        header h2 {
+            margin-top: -10px;
+            font-size: 1.3rem;
+        }
+
+        .btn {
+            margin-top: 20px;
+            padding: 10px 26px;
+            border-radius: 30px;
+            border: none;
+            background: #ff4fa3;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        section {
+            padding: 60px 10%;
+        }
+
+        /* SCRAPBOOK Polaroid Gallery */
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+        }
+
+        .polaroid {
+            background: #fff;
+            width: 220px;
+            padding: 10px;
+            padding-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0px 5px 12px rgba(0,0,0,0.15);
+            position: relative;
+            transform: rotate(-2deg);
+        }
+
+        .polaroid img {
+            width: 100%;
+            border-radius: 4px;
+            height: 280px;
+            object-fit: cover;
+        }
+
+        .polaroid:nth-child(2n) {
+            transform: rotate(2deg);
+        }
+        .polaroid:nth-child(3n) {
+            transform: rotate(-1deg);
+        }
+
+        /* Tape effect */
+        .polaroid::before {
+            content: '';
+            position: absolute;
+            top: -14px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70px;
+            height: 28px;
+            background: rgba(255, 235, 205, 0.9);
+            border-radius: 4px;
+            rotate: -3deg;
+        }
+
+        /* Scrapbook Headings */
+        h2 {
+            font-family: 'Permanent Marker', cursive;
+            color: #d5438e;
+            font-size: 1.8rem;
+        }
+
+        ul {
+            list-style-type: circle;
+            line-height: 1.9;
+            font-size: 1.05rem;
+        }
+
+        /* torn paper background for sections */
+        .paper-section {
+            background: #fffaf7;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+            margin-bottom: 50px;
+            border: 2px dashed #f3b4cf;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #ffeef4;
+            border-top: 6px dashed #e89ab5;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Happy 21st Birthday!</h1>
+    <h2>To My Bestfriend <span style="color:#ff4fa3;"> Yashvii</span> 🎀</h2>
+    <button class="btn" onclick="launchConfetti()">Celebrate 🎉</button>
+</header>
+
+<section class="paper-section">
+    <h2>💗 A Little Message For You</h2>
+    <p>
+        Baby,<br><br>
+        Happy 21st Birthday! You are one of the most wonderful humans I’ve ever met and I’m so grateful
+        for every memory, every laugh, and every 3am talk.Genuinely so  glad that you exist and make 
+        MUJ a little better for me. LOVE YOU ALWAYS AND NEVER LEAVING YOU.  
+        Here’s a little corner of the internet just for you. 
+    </p>
+</section>
+
+<section class="paper-section">
+    <h2>📸 Our Scrapbook</h2>
+    <div class="gallery-container">
+        <div class="polaroid"><img src="img1.jpeg"></div>
+        <div class="polaroid"><img src="img2.jpeg"></div>
+        <div class="polaroid"><img src="img4.jpeg"></div>
+        <div class="polaroid"><img src="img5.jpeg"></div>
+
+        <!-- you can add unlimited -->
+        <!-- <div class="polaroid"><img src="img6.jpeg"></div> -->
+        <!-- <div class="polaroid"><img src="img7.jpeg"></div> -->
+    </div>
+</section>
+
+<section class="paper-section">
+    <h2>🎀 21 Things I Love About You</h2>
+    <ul>
+        <li>Your smile</li>
+        <li>Your kindness</li>
+        <li>Your chaos</li>
+        <li>Your brain which is dumb btw</li>
+        <li>Your innocence</li>
+        <li>The way you say “I am fine” and then give 2-hour explanation later</li>
+        <li>The way you say “hmm” when you have completely zoned out</li>
+        <li>How you go from silent to totally unhinged with the right people</li>
+        <li>The way you get excited quietly (but I notice)</li>
+        <li>The peace you bring into chaotic rooms</li>
+        <li>The way you give advice like you are 80 years old but behave like a 8 year old</li>
+        <li>Your “I dont care” attitude (but you actually do)</li>
+        <li>The fact that you are so wholesome it is suspicious</li>
+        <li>How your polite nod actually means “I am ignoring you”</li>
+        <li>The way you look so done with life</li>
+        <li>How you panic because you know I will manage for both of us</li>
+        <li>Your innocent face that makes everyone believe you over literal facts 😂</li>
+        <li>The comfort of just sitting beside you in silence</li>
+        <li>Your confused face is my favourite emoji</li>
+        <li>How you care about small details</li>
+        <li>That you are YOU — no filters, no pretending, no drama</li>
+    </ul>
+</section>
+
+<section class="paper-section">
+    <h2>✨ Favorite Memories</h2>
+    <p>• That random exam discussions</p>
+    <p>• Our udaipur trip that became a core memory ✨</p>
+    <p>• All the deep talks that I will remember forever ♡</p>
+</section>
+
+<footer>
+    Made with Love ♡ By Anshikka
+</footer>
+
+<!-- Confetti Script -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+<script>
+    function launchConfetti() {
+        confetti({
+            particleCount: 180,
+            spread: 80,
+            origin: { y: 0.6 }
+        });
+    }
+</script>
+
+</body>
+</html>
